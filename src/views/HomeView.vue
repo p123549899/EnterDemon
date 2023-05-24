@@ -2,6 +2,15 @@
   <div class="home">
     <div class="main">
       <div class="nab">
+        <div style=" float: left;">
+          <p5-title
+            content="EnterDemon"
+            size="extra-large"
+            font_color="#ff0022"
+            selected_font_color="#000"
+            selected_bg_color="#ff0022"
+          ></p5-title>
+        </div>
         <div class="nabitem">
           <p5-button>
             <p5-title
@@ -99,11 +108,12 @@ import { P5CreateCrowd } from "p5-ui";
   display: flex;
   justify-content: center;
   .nab {
+    padding: 20px;
     position: fixed;
-    display: flex;
+    // display: flex;
     justify-content: center;
     width: 100vw;
-    height: 80px;
+    height: auto;
     top: 0;
     left: 0;
     z-index: 99;
@@ -111,6 +121,10 @@ import { P5CreateCrowd } from "p5-ui";
 
     background-size: cover;
     border: none;
+    .nabitem{
+      display: block;
+      // height: 8px;
+    }
   }
 }
 </style>
